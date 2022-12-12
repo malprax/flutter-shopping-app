@@ -80,8 +80,6 @@ class UserController extends GetxController {
     });
   }
 
- 
-
   _clearControllers() {
     name.clear();
     email.clear();
