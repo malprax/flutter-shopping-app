@@ -11,12 +11,12 @@ import 'controllers/authController.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await initialization.then((value){
+  await initialization.then((value) {
     Get.put(AppController());
     Get.put(UserController());
     Get.put(ProducsController());
     Get.put(CartController());
-    Get.put(PaymentsController());
+    // Get.put(PaymentsController());
   });
   runApp(MyApp());
 }

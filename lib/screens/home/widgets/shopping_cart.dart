@@ -25,23 +25,28 @@ class ShoppingCartWidget extends StatelessWidget {
             SizedBox(
               height: 5,
             ),
-            Obx(()=>Column(
-              children: userController.userModel.value.cart
-                  .map((cartItem) => CartItemWidget(cartItem: cartItem,))
-                  .toList(),
-            )),
+            Obx(() => Column(
+                  children: userController.userModel.value.cart
+                      .map((cartItem) => CartItemWidget(
+                            cartItem: cartItem,
+                          ))
+                      .toList(),
+                )),
           ],
         ),
         Positioned(
             bottom: 30,
             child: Container(
-              width: MediaQuery.of(context).size.width,
-              padding: EdgeInsets.all(8),
-              child: Obx(() => CustomButton(
-                  text: "Pay (\$${cartController.totalCartPrice.value.toStringAsFixed(2)})", onTap: () {
-                    paymentsController.createPaymentMethod();
-                  }),)
-            ))
+                width: MediaQuery.of(context).size.width,
+                padding: EdgeInsets.all(8),
+                child: Obx(
+                  () => CustomButton(
+                      text:
+                          "Pay (\$${cartController.totalCartPrice.value.toStringAsFixed(2)})",
+                      onTap: () {
+                        // paymentsController.createPaymentMethod();
+                      }),
+                )))
       ],
     );
   }

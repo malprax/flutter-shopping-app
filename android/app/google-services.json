@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "225865634762",
+    "project_id": "cartsample-3b09a",
+    "storage_bucket": "cartsample-3b09a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225865634762:android:f7e7b3463d1a8c69f23533",
+        "android_client_info": {
+          "package_name": "com.playkit.cartapp_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225865634762-10th5bhor2i37v6dtlejot407p3evpga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7YQ5CGQExEAPO2jRLjhDBPwJrCTpMEq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "225865634762-10th5bhor2i37v6dtlejot407p3evpga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

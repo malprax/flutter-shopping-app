@@ -39,19 +39,18 @@ class HomeScreen extends StatelessWidget {
         drawer: Drawer(
           child: ListView(
             children: [
-              Obx(()=>UserAccountsDrawerHeader(
-                decoration: BoxDecoration(
-                  color: Colors.black
-                ),
+              Obx(() => UserAccountsDrawerHeader(
+                  decoration: BoxDecoration(color: Colors.black),
                   accountName: Text(userController.userModel.value.name ?? ""),
-                  accountEmail: Text(userController.userModel.value.email ?? ""))),
+                  accountEmail:
+                      Text(userController.userModel.value.email ?? ""))),
               ListTile(
                 leading: Icon(Icons.book),
                 title: CustomText(
                   text: "Payments History",
                 ),
-                onTap: ()async {
-                 paymentsController.getPaymentHistory();
+                onTap: () async {
+                  //  paymentsController.getPaymentHistory();
                 },
               ),
               ListTile(

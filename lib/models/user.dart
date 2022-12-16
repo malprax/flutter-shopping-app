@@ -7,10 +7,10 @@ class UserModel {
   static const EMAIL = "email";
   static const CART = "cart";
 
-   String id;
-   String name;
-   String email;
-   List<CartItemModel> cart;
+  String id;
+  String name;
+  String email;
+  List<CartItemModel> cart;
 
   UserModel({this.id, this.name, this.email, this.cart});
 
@@ -21,12 +21,12 @@ class UserModel {
     cart = _convertCartItems(snapshot.data()[CART] ?? []);
   }
 
-  List<CartItemModel> _convertCartItems(List cartFomDb){
+  List<CartItemModel> _convertCartItems(List cartFomDb) {
     List<CartItemModel> _result = [];
-    if(cartFomDb.length > 0){
+    if (cartFomDb.length > 0) {
       cartFomDb.forEach((element) {
-      _result.add(CartItemModel.fromMap(element));
-    });
+        _result.add(CartItemModel.fromMap(element));
+      });
     }
     return _result;
   }

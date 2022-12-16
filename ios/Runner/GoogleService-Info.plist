@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>864878214219-nkt6klhr0s5ae8fqu9p20jrcj8cocfc8.apps.googleusercontent.com</string>
+	<string>225865634762-i7lfb34qtv5m69fhp521h3dfooidj235.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.864878214219-nkt6klhr0s5ae8fqu9p20jrcj8cocfc8</string>
+	<string>com.googleusercontent.apps.225865634762-i7lfb34qtv5m69fhp521h3dfooidj235</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBf-aJVNbWIBipkd-BWejLaipAiKIyeZTM</string>
+	<string>AIzaSyC7kjxtxIEKUdNwqe24CkpnalqszxAQ8Vs</string>
 	<key>GCM_SENDER_ID</key>
-	<string>864878214219</string>
+	<string>225865634762</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.santosenoque.untitled</string>
+	<string>com.playkit.cartappios</string>
 	<key>PROJECT_ID</key>
-	<string>sneex-cbc6a</string>
+	<string>cartsample-3b09a</string>
 	<key>STORAGE_BUCKET</key>
-	<string>sneex-cbc6a.appspot.com</string>
+	<string>cartsample-3b09a.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:864878214219:ios:7c1f9c6e89f379cfe8a1ce</string>
+	<string>1:225865634762:ios:92a29a872eebdac0f23533</string>
 </dict>
 </plist>

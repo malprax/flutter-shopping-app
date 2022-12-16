@@ -70,24 +70,24 @@ class CartController extends GetxController {
           .where((item) => item.productId == product.id)
           .isNotEmpty;
 
-  void decreaseQuantity(CartItemModel item){
-    if(item.quantity == 1){
+  void decreaseQuantity(CartItemModel item) {
+    if (item.quantity == 1) {
       removeCartItem(item);
-    }else{
+    } else {
       removeCartItem(item);
       item.quantity--;
-          userController.updateUserData({
+      userController.updateUserData({
         "cart": FieldValue.arrayUnion([item.toJson()])
       });
     }
   }
 
-    void increaseQuantity(CartItemModel item){
-      removeCartItem(item);
-      item.quantity++;
-      logger.i({"quantity": item.quantity});
-          userController.updateUserData({
-        "cart": FieldValue.arrayUnion([item.toJson()])
-      });
+  void increaseQuantity(CartItemModel item) {
+    removeCartItem(item);
+    item.quantity++;
+    logger.i({"quantity": item.quantity});
+    userController.updateUserData({
+      "cart": FieldValue.arrayUnion([item.toJson()])
+    });
   }
 }
